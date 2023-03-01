@@ -23,7 +23,7 @@ while True:
     elif choice == 6:
         print(riik_pealinn)
     elif choice == 7:
-        salvestamine("riigid_pealinnd.txt")
+        salvestamine("riigid_pealinnd.txt",riik_pealinn)
     elif choice == 8:
         break
         

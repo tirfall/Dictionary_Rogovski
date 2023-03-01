@@ -75,7 +75,7 @@ def test (ridict):
             print("Vale vastus1")
     print(goodans,"Õiged vastused")
     print(badans,"Valed vastused")
-    finalscore=goodans/anstest*100
+    finalscore=round(goodans/anstest*100,2)
     print(finalscore, "%")
 
 def heli(ridict):
@@ -85,5 +85,14 @@ def heli(ridict):
     gTTS(text=text, lang=keel, slow=False).save("heli.mp3")
     os.system("heli.mp3")
 
-def salvestamine(f:str):
-    pass
+def salvestamine(f:str,ridict):
+    f = open(f, "w", encoding="utf-8-sig")
+    for element in ridict:
+        f.write(str(element))
+        write('\n')
+#def salvestamine(fail,jarjend):
+#    f = io.open(fail, "w", encoding="utf-8-sig")
+#    for element in jarjend:
+#     f.write(str(element))
+#     f.write('\n')
+#    f.close()
