@@ -90,9 +90,3 @@ def salvestamine(f:str,ridict):
     for key, value in ridict.items():
         f.write(f'{key}-{value}\n')
     f.close
-#def salvestamine(fail,jarjend):
-#    f = io.open(fail, "w", encoding="utf-8-sig")
-#    for element in jarjend:
-#     f.write(str(element))
-#     f.write('\n')
-#    f.close()
